@@ -1,0 +1,55 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script language="JavaScript" type="text/javascript" src="js/jquery-1.4.1.min.js" ></script>
+	<script language="JavaScript" type="text/javascript" src="js/jquery.styledButton.js" ></script>
+	<link rel="stylesheet" href="css/styledButton.css" type="text/css" />
+	<link rel="stylesheet" href="css/nd.css" type="text/css" />
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("span").css({
+				 'padding' : '5px 20px',
+				 'font-size' : '25px',
+			});
+			
+			$("span.alone").styledButton({
+				'orientation' : 'alone',
+				'action' : function () { alert( 'omfg' ) },
+				'display' : 'block'
+			});
+			
+			$("span.left").styledButton({
+				'orientation' : 'left',
+				'action' : { 'on' :function () { $("span.left a").css("color", "white");},
+					     'off' : function () { $("span.left a").css("color", "black");} 
+                                          },
+				'toggle' : true
+			});
+			$("span.center").styledButton({
+				'orientation' : 'center',
+				'action' : { 'on' :function () { $("span.center a").css("color", "white");},
+					     'off' : function () { $("span.center a").css("color", "black");} 
+                                          },
+				'toggle' : true
+			});
+			$("span.teller").styledButton({
+				'action' : { 'on' :function () { $("span.teller a").css("color", "white");
+		                 $("span.center").styledButtonDeactivate();},
+					     'off' : function () { $("span.teller a").css("color", "black");} 
+                                          },
+				'toggle' : true,
+				'orientation' : 'left'
+			});
+		} );
+	</script>
+
+	<title>jQuery imageless buttons a la Google</title>
+</head>
+
+<body>
+
+	<span class="left"><a href="">Left</a></span><span class="center"><a href="">Center</a></span><span class="teller"><a href="">tell value</a></span>
+	
+</body>
+</html>
