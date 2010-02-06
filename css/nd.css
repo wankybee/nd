@@ -3,3 +3,8 @@ span > a {
     color: black;
     outline: none;
 }
+
+.border {
+    padding-right: 0px;
+}
+

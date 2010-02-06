@@ -2,6 +2,11 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]>
+	    <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+	<![endif]-->
 	<script language="JavaScript" type="text/javascript" src="js/jquery-1.4.1.min.js" ></script>
 	<script language="JavaScript" type="text/javascript" src="js/jquery.styledButton.js" ></script>
 	<link rel="stylesheet" href="css/styledButton.css" type="text/css" />
@@ -27,17 +32,28 @@
 				'toggle' : true
 			});
 			$("span.center").styledButton({
-				'orientation' : 'center',
-				'action' : { 'on' :function () { $("span.center a").css("color", "white");},
-					     'off' : function () { $("span.center a").css("color", "black");} 
-                                          },
-				'toggle' : true
+				'action' : { 'on' :function () {
+		                 $("span.teller a").css("color", "white");
+		                 $("span.center").styledButtonDeactivate();
+                                 $("span.center a").css("color", "black");
+                                 },
+	                         'off' : function () { 
+                                 $("span.teller").styledButtonActivate();
+                                 } 
+                                 },
+				'toggle' : true,
+				'orientation' : 'center'
 			});
 			$("span.teller").styledButton({
-				'action' : { 'on' :function () { $("span.teller a").css("color", "white");
-		                 $("span.center").styledButtonDeactivate();},
-					     'off' : function () { $("span.teller a").css("color", "black");} 
-                                          },
+				'action' : { 'on' :function () {
+		                 $("span.teller a").css("color", "white");
+		                 $("span.center").styledButtonDeactivate();
+                                 $("span.center a").css("color", "black");
+                                 },
+	                         'off' : function () { 
+                                 $("span.teller").styledButtonActivate();
+                                 } 
+                                 },
 				'toggle' : true,
 				'orientation' : 'left'
 			});
@@ -48,8 +64,8 @@
 </head>
 
 <body>
-
-	<span class="left"><a href="">Left</a></span><span class="center"><a href="">Center</a></span><span class="teller"><a href="">tell value</a></span>
-	
+  <div class="container">
+    <span class="left"><a href="">Left</a></span><span class="center"><a href="">Center</a></span><span class="teller"><a href="">tell value</a></span>
+  </div>	
 </body>
 </html>
