@@ -94,6 +94,9 @@
         .slider .slider-lbl5 {
             left: 455px;
         }
+	.link {
+	    outline: none;
+        }
     </style>
     <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.6.custom.min.js"></script>
@@ -103,6 +106,14 @@
             var ul = $('ul', container);
             
             var itemsWidth = ul.innerWidth() - container.outerWidth();
+
+             $(".link").click(function(e){
+              e.preventDefault();
+	      // alert($(this).html());
+	      var url = $(this).attr('href');
+              $("#descr").html("");
+              $("#descr").load(url);
+             });
             
             $('.slider', container).slider({
                 min: 0,
@@ -116,54 +127,55 @@
     </script>
 </head>
 <body>
-    <div id="container">
-        <h1>Slider Gallery</h1>
-        <p>This shows a demonstration of a slider widget from the jQuery UI library used to create the same effect used on <a href="http://www.apple.com/mac/">Apple's web site</a>.</p>
-        <p><a href="/slider-gallery">Read the article, and see the screencast this demonstration relates to</a></p>
+  <div id="container">
+    <h1>Slider Gallery</h1>
+    <p>This shows a demonstration of a slider widget from the jQuery UI library used to create the same effect used on <a href="http://www.apple.com/mac/">Apple's web site</a>.</p>
+    <p><a href="/slider-gallery">Read the article, and see the screencast this demonstration relates to</a></p>
 
-        <div class="sliderGallery">
-            <ul>
-                <li><img class="pb-airportexpress" src="images/pb_airport_express.jpg" /></li>
-                <li><img src="images/pb_airport_extreme.jpg" /></li>
-                <li><img src="images/pb_timecapsule_20080115.jpg" /></li>
-                <li><img src="images/pb_keyboards20070807.jpg" /></li>
-                <li><img src="images/pb_mighty_mouse.jpg" /></li>
-                <li><img src="images/pb_cinema_display20071026.jpg" /></li>
-                <li><img src="images/pb_mac_pro_20070622.jpg" /></li>
+    <div class="sliderGallery">
+      <ul>
+        <li><a href="/ajax.html" class="link"><img class="pb-airportexpress" src="images/pb_airport_express.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_airport_extreme.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_timecapsule_20080115.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_keyboards20070807.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_mighty_mouse.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_cinema_display20071026.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_mac_pro_20070622.jpg" /></a></li>
 
-                <li><img class="pb-macmini" src="images/pb_mac_mini.jpg" /></li>
-                <li><img src="images/pb_macbook20071026.jpg" /></li>
-                <li><img class="pb-macbookair" src="images/pb_macbookair_20080115.jpg" /></li>
-                <li><img class="pb-macbookpro" src="images/pb_macbook_pro20071026.jpg" /></li>
-                <li><img class="pb-imac" src="images/pb_imac20071026.jpg" /></li>
-                <li><img src="images/pb_macosx_20080115.jpg" /></li>
-                <li><img src="images/pb_ilife_20080115.jpg" /></li>
-                <li><img src="images/pb_dot_mac_20080115.jpg" /></li>
-                <li><img src="images/pb_iwork_20080115.jpg" /></li>
+        <li><a href="" class="link"><img class="pb-macmini" src="images/pb_mac_mini.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_macbook20071026.jpg" /></a></li>
+        <li><a href="" class="link"><img class="pb-macbookair" src="images/pb_macbookair_20080115.jpg" /></a></li>
+        <li><a href="" class="link"><img class="pb-macbookpro" src="images/pb_macbook_pro20071026.jpg" /></a></li>
+        <li><a href="" class="link"><img class="pb-imac" src="images/pb_imac20071026.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_macosx_20080115.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_ilife_20080115.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_dot_mac_20080115.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_iwork_20080115.jpg" /></a></li>
 
-                <li><img src="images/pb_quicktime.jpg" /></li>
-                <li><img src="images/pb_aperture20080212.jpg" /></li>
-                <li><img src="images/pb_final_cut_studio2_20080115.jpg" /></li>
-                <li><img src="images/pb_final_cut_express_20080115.jpg" /></li>
-                <li><img src="images/pb_logic_studio_20080115.jpg" /></li>
-                <li><img src="images/pb_logic_express_20080115.jpg" /></li>
-                <li><img src="images/pb_shake_20080115.jpg" /></li>                    
-                <li><img src="images/pb_apple_remote_desktop_20080115.jpg" /></li>
-                <li><img src="images/pb_xserve.jpg" /></li>
+        <li><a href="" class="link"><img src="images/pb_quicktime.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_aperture20080212.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_final_cut_studio2_20080115.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_final_cut_express_20080115.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_logic_studio_20080115.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_logic_express_20080115.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_shake_20080115.jpg" /></a></li>                    
+        <li><a href="" class="link"><img src="images/pb_apple_remote_desktop_20080115.jpg" /></a></li>
+        <li><a href="" class="link"><img src="images/pb_xserve.jpg" /></a></li>
 
-                <li><img src="images/pb_xserve_raid.jpg" /></li>
-                <li><img class="pb-xsan" src="images/pb_xsan_20080115.jpg" /></li>
-                <li><img class="pb-macosxserver" src="images/pb_macosx_server20071016.jpg" /></li>                    
-            </ul>
-            <div class="slider">
-                <div class="handle"></div>
-                <span class="slider-lbl1">Wi-Fi</span>
-                <span class="slider-lbl3">Macs</span>
-                <span class="slider-lbl4">Applications</span>
-                <span class="slider-lbl5">Servers</span>
-            </div>
-        </div>
+        <li><a href="" class="link"><img src="images/pb_xserve_raid.jpg" /></a></li>
+        <li><a href="" class="link"><img class="pb-xsan" src="images/pb_xsan_20080115.jpg" /></a></li>
+        <li><a href="" class="link"><img class="pb-macosxserver" src="images/pb_macosx_server20071016.jpg" /></a></li>
+      </ul>
+      <div class="slider">
+        <div class="handle"></div>
+        <span class="slider-lbl1">Wi-Fi</span>
+        <span class="slider-lbl3">Macs</span>
+        <span class="slider-lbl4">Applications</span>
+        <span class="slider-lbl5">Servers</span>
+      </div>
     </div>
+    <div id="descr"></div>
+  </div>
 </body>
 </html>
 
