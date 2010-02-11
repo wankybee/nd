@@ -1,7 +1,11 @@
-span > a {
+div.heading span > a {
     text-decoration: none;
     color: black;
     outline: none;
+}
+
+div.cap h1 {
+    padding:20px;
 }
 
 .border {

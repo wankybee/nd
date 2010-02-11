@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="css/slider.css"/>
     <script type="text/javascript" src="js/jquery-1.2.6.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.6.custom.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/jquery.styledButton.js" ></script>
+    <link rel="stylesheet" href="css/styledButton.css" type="text/css"/>
+    <link rel="stylesheet" href="css/nd.css" type="text/css"/>
     <script type="text/javascript" charset="utf-8">
         window.onload = function () {
             var container = $('div.sliderGallery');
@@ -37,12 +40,38 @@
             });
         };
 
+	$(document).ready(function () {
+	$("div.heading span").css({
+	'padding' : '5px 20px',
+	'font-size' : '25px',
+	});
+	$("span.left").styledButton({
+	'orientation' : 'left',
+	'action' : { 'on' :function () {
+        window.location.href = $("span.left a").attr('href');
+        },
+        },
+	'toggle' : true
+	});
+	$("span.center").styledButton({
+	'orientation' : 'center'
+	});
+	$("span.teller").styledButton({
+	'orientation' : 'left'
+	});
+        $("span.center").styledButtonActivate();
+        $("span.center a").css("color", "white");
+	});
     </script>
     <script type="text/javascript" src="js/gallery.js"></script>
 </head>
 <body>
   <div class="container">
-    <div class="span-19 prepend-1 append-4 last">
+    <div class="span-19 prepend-1 append-4 last cap">
+      <h1> Autotech CNC </h1>
+    </div>
+    <div class="span-19 prepend-1 append-4 last heading">
+    <span class="left"><a href="">Left</a></span><span class="center"><a href="">Center</a></span><span class="teller"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
     </div>
     <div class="span-19 prepend-1 append-4 last">
     <h1>Slider Gallery</h1>
