@@ -19,14 +19,14 @@
 		        });
 			
 			$("span.home").styledButton({
-				'orientation' : 'left'
-			});
-			$("span.about").styledButton({
 				'action' : { 'on' :function () {
-                                    window.location.href = $("span.about a").attr('href');
+                                    window.location.href = $("span.home a").attr('href');
                                  },
                                  },
 				'toggle' : true,
+				'orientation' : 'left'
+			});
+			$("span.about").styledButton({
 				'orientation' : 'center'
 			});
 			$("span.careers").styledButton({
@@ -56,21 +56,21 @@
 			$("span.teller").styledButton({
 				'orientation' : 'right'
 			});
-                        $("span.home").styledButtonActivate();
-                        $("span.home a").css("color", "white");
+                        $("span.about").styledButtonActivate();
+                        $("span.about a").css("color", "white");
 		} );
 	</script>
 
-	<title>Autotech CNC - home</title>
+	<title>Autotech CNC - about</title>
 </head>
 
 <body>
   <div class="container">
     <div class="span-19 prepend-1 append-4 last cap">
-      <h1> Autotech CNC</h1>
+      <h1> Autotech CNC </h1>
     </div>
     <div class="span-19 prepend-1 append-4 last heading">
-      <span class="home"><a href="">Home</a></span><span class="about"><a href="/nd/about.html">About</a></span><span class="careers"><a href="/nd/careers.html">Careers</a></span><span class="products"><a href="/nd/products.html">Products</a></span><span class="contact"><a href="/nd/contact.html">Contact</a></span><span class="teller"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+    <span class="home"><a href="/nd/index.html">Home</a></span><span class="about"><a href="">About</a></span><span class="careers"><a href="/nd/careers.html">Careers</a></span><span class="products"><a href="/nd/products.html">Products</a></span><span class="contact"><a href="/nd/contact.html">Contact</a></span><span class="teller"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
     </div>
     <div class="span-19 prepend-1 append-4 last">
     <h1>Slider Gallery</h1>
