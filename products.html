@@ -17,13 +17,6 @@
 				 'padding' : '5px 20px',
 				 'font-size' : '25px',
 			});
-			
-			$("span.alone").styledButton({
-				'orientation' : 'alone',
-				'action' : function () { alert( 'omfg' ) },
-				'display' : 'block'
-			});
-			
 			$("span.left").styledButton({
 				'orientation' : 'left',
 				'action' : { 'on' :function () { $("span.left a").css("color", "white");},
@@ -32,34 +25,28 @@
 				'toggle' : true
 			});
 			$("span.center").styledButton({
-				'action' : { 'on' :function () {
-                                    window.location.href = $("span.center a").attr('href');
-                                 },
-	                         'off' : function () { 
-                                 } 
-                                 },
-				'toggle' : true,
 				'orientation' : 'center'
 			});
 			$("span.teller").styledButton({
 				'action' : { 'on' :function () {
                                  },
 	                         'off' : function () { 
-                                 $("span.teller").styledButtonActivate();
                                  } 
                                  },
 				'toggle' : true,
 				'orientation' : 'left'
 			});
+                        $("span.center").styledButtonActivate();
+                        $("span.center a").css("color", "white");
 		} );
 	</script>
 
-	<title>Autotech CNC</title>
+	<title>Autotech CNC - products</title>
 </head>
 
 <body>
   <div class="container">
-    <span class="left"><a href="">Left</a></span><span class="center"><a href="/nd/products.html">Center</a></span><span class="teller"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+    <span class="left"><a href="">Left</a></span><span class="center"><a href="">Center</a></span><span class="teller"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
   </div>	
 </body>
 </html>
