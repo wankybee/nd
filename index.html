@@ -13,30 +13,53 @@
 	<link rel="stylesheet" href="css/nd.css" type="text/css" />
 	<script type="text/javascript">
 		$(document).ready(function () {
-			$("span").css({
-				 'padding' : '5px 20px',
-				 'font-size' : '25px',
-			});
+   		        $("div.heading span").css({
+		        'padding' : '5px 20px',
+		        'font-size' : '25px',
+		        });
 			
-			
-			$("span.left").styledButton({
+			$("span.home").styledButton({
 				'orientation' : 'left',
 				'action' : { 'on' :function () {
-                                    window.location.href = $("span.left a").attr('href');
+                                    window.location.href = $("span.home a").attr('href');
                                  },
                                  },
 				'toggle' : true
 			});
-			$("span.center").styledButton({
+			$("span.about").styledButton({
 				'action' : { 'on' :function () {
-                                    window.location.href = $("span.center a").attr('href');
+                                    window.location.href = $("span.about a").attr('href');
+                                 },
+                                 },
+				'toggle' : true,
+				'orientation' : 'center'
+			});
+			$("span.careers").styledButton({
+				'action' : { 'on' :function () {
+                                    window.location.href = $("span.careers a").attr('href');
+                                 },
+                                 },
+				'toggle' : true,
+				'orientation' : 'center'
+			});
+			$("span.products").styledButton({
+				'action' : { 'on' :function () {
+                                    window.location.href = $("span.products a").attr('href');
+                                 },
+                                 },
+				'toggle' : true,
+				'orientation' : 'center'
+			});
+			$("span.contact").styledButton({
+				'action' : { 'on' :function () {
+                                    window.location.href = $("span.contact a").attr('href');
                                  },
                                  },
 				'toggle' : true,
 				'orientation' : 'center'
 			});
 			$("span.teller").styledButton({
-				'orientation' : 'left'
+				'orientation' : 'right'
 			});
 		} );
 	</script>
@@ -46,7 +69,20 @@
 
 <body>
   <div class="container">
-    <span class="left"><a href="">Left</a></span><span class="center"><a href="/nd/products.html">Center</a></span><span class="teller"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+    <div class="span-19 prepend-1 append-4 last cap">
+      <h1> Autotech CNC </h1>
+    </div>
+    <div class="span-19 prepend-1 append-4 last heading">
+    <span class="home"><a href="">Home</a></span><span class="about"><a href="/nd/products.html">About</a></span><span class="careers"><a href="/nd/products.html">Careers</a></span><span class="products"><a href="/nd/products.html">Products</a></span><span class="contact"><a href="/nd/products.html">Contact</a></span><span class="teller"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+    </div>
+    <div class="span-19 prepend-1 append-4 last">
+    <h1>Slider Gallery</h1>
+    <p>This shows a demonstration of a slider widget from the jQuery UI library used to create the same effect used on <a href="http://www.apple.com/mac/">Apple's web site</a>.</p>
+    <p><a href="/slider-gallery">Read the article, and see the screencast this demonstration relates to</a></p>
+    </div>
+    <div class="span-19 prepend-1 append-4 last footer">
+        Copyright &copy; Autotech CNC. 2010.
+    </div>
   </div>	
 </body>
 </html>

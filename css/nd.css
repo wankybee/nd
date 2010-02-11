@@ -5,8 +5,14 @@ div.heading span > a {
 }
 
 div.cap h1 {
-    padding:20px;
+    padding-top:20px;
+    padding-bottom:20px;
 }
+
+div.heading {
+    padding-bottom:20px;
+}
+
 
 .border {
     padding-right: 0px;
@@ -14,5 +20,5 @@ div.cap h1 {
 
 .footer
 {
-    padding:20px;
+/*     padding:20px; */
 }
