@@ -1,9 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>Slider Gallery</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection"/>
+    <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"/>
+    <!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/><![endif]-->
+
     <link rel="stylesheet" type="text/css" href="css/slider.css"/>
     <script type="text/javascript" src="js/jquery-1.2.6.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.6.custom.min.js"></script>
@@ -28,7 +32,7 @@
                 max: itemsWidth,
                 handle: '.handle',
                 change: function (event, ui) {
-                    ul.animate({'left' : ui.value * -1}, 500);
+                    ul.animate({"left": ui.value * -1}, 500);
                 }
             });
         };
@@ -37,7 +41,10 @@
     <script type="text/javascript" src="js/gallery.js"></script>
 </head>
 <body>
-  <div id="container">
+  <div class="container">
+    <div class="span-19 prepend-1 append-4 last">
+    </div>
+    <div class="span-19 prepend-1 append-4 last">
     <h1>Slider Gallery</h1>
     <p>This shows a demonstration of a slider widget from the jQuery UI library used to create the same effect used on <a href="http://www.apple.com/mac/">Apple's web site</a>.</p>
     <p><a href="/slider-gallery">Read the article, and see the screencast this demonstration relates to</a></p>
@@ -49,8 +56,6 @@
         <li><a href="/nd/gallery.html" class="link"><img border="0" src="images/pb_timecapsule_20080115.jpg" /></a></li>
         <li><a href="" class="link"><img border="0" src="images/pb_keyboards20070807.jpg" /></a></li>
         <li><a href="" class="link"><img border="0" src="images/pb_mighty_mouse.jpg" /></a></li>
-<!--         <li><a href="" class="link"><img border="0" src="images/pb_cinema_display20071026.jpg" /></a></li> -->
-<!--         <li><a href="" class="link"><img border="0" src="images/pb_mac_pro_20070622.jpg" /></a></li> -->
 
         <li><a href="" class="link"><img border="0" class="pb-macmini" src="images/pb_mac_mini.jpg" /></a></li>
         <li><a href="" class="link"><img border="0" src="images/pb_macbook20071026.jpg" /></a></li>
@@ -59,19 +64,11 @@
         <li><a href="/nd/gallery2.html" class="link"><img border="0" class="pb-imac" src="images/pb_imac20071026.jpg" /></a></li>
         <li><a href="" class="link"><img border="0" src="images/pb_macosx_20080115.jpg" /></a></li>
         <li><a href="" class="link"><img border="0" src="images/pb_ilife_20080115.jpg" /></a></li>
-<!--         <li><a href="" class="link"><img border="0" src="images/pb_dot_mac_20080115.jpg" /></a></li> -->
-<!--         <li><a href="" class="link"><img border="0" src="images/pb_iwork_20080115.jpg" /></a></li> -->
 
         <li><a href="" class="link"><img border="0" src="images/pb_quicktime.jpg" /></a></li>
         <li><a href="" class="link"><img border="0" src="images/pb_aperture20080212.jpg" /></a></li>
         <li><a href="" class="link"><img border="0" src="images/pb_final_cut_studio2_20080115.jpg" /></a></li>
-<!--         <li><a href="" class="link"><img border="0" src="images/pb_final_cut_express_20080115.jpg" /></a></li> -->
-<!--         <li><a href="" class="link"><img border="0" src="images/pb_logic_studio_20080115.jpg" /></a></li> -->
-<!--         <li><a href="" class="link"><img border="0" src="images/pb_logic_express_20080115.jpg" /></a></li> -->
-<!--         <li><a href="" class="link"><img border="0" src="images/pb_shake_20080115.jpg" /></a></li>                     -->
-<!--         <li><a href="" class="link"><img border="0" src="images/pb_apple_remote_desktop_20080115.jpg" /></a></li> -->
         <li><a href="" class="link"><img border="0" src="images/pb_xserve.jpg" /></a></li>
-
         <li><a href="" class="link"><img border="0" src="images/pb_xserve_raid.jpg" /></a></li>
         <li><a href="" class="link"><img border="0" class="pb-xsan" src="images/pb_xsan_20080115.jpg" /></a></li>
         <li><a href="" class="link"><img border="0" class="pb-macosxserver" src="images/pb_macosx_server20071016.jpg" /></a></li>
@@ -84,7 +81,10 @@
         <span class="slider-lbl5">Parts</span>
       </div>
     </div>
+   </div>
+    <div class="span-19 prepend-1 append-4 last">
     <div id="descr"></div>
+    </div>
     <div id="bottom"></div>
   </div>
 </body>

@@ -10,11 +10,11 @@ h1 {
     margin-bottom: 2px; 
 }
 
-#container {
-    background-color: #fff;
-    width: 920px;
-    margin: 15px auto;
-    padding: 50px;
+#box {
+/*     background-color: #fff; */
+/*     width: 920px; */
+/*     margin: 15px auto; */
+/*     padding: 50px; */
 }
 
 .sliderGallery {

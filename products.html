@@ -19,9 +19,10 @@
 			});
 			$("span.left").styledButton({
 				'orientation' : 'left',
-				'action' : { 'on' :function () { $("span.left a").css("color", "white");},
-					     'off' : function () { $("span.left a").css("color", "black");} 
-                                          },
+				'action' : { 'on' :function () {
+                                    window.location.href = $("span.left a").attr('href');
+                                 },
+                                 },
 				'toggle' : true
 			});
 			$("span.center").styledButton({
