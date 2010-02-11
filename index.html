@@ -18,11 +18,6 @@
 				 'font-size' : '25px',
 			});
 			
-			$("span.alone").styledButton({
-				'orientation' : 'alone',
-				'action' : function () { alert( 'omfg' ) },
-				'display' : 'block'
-			});
 			
 			$("span.left").styledButton({
 				'orientation' : 'left',
@@ -35,20 +30,11 @@
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.center a").attr('href');
                                  },
-	                         'off' : function () { 
-                                 } 
                                  },
 				'toggle' : true,
 				'orientation' : 'center'
 			});
 			$("span.teller").styledButton({
-				'action' : { 'on' :function () {
-                                 },
-	                         'off' : function () { 
-                                 $("span.teller").styledButtonActivate();
-                                 } 
-                                 },
-				'toggle' : true,
 				'orientation' : 'left'
 			});
 		} );
