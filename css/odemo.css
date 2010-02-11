@@ -49,6 +49,12 @@ div#main h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
 	height:45px;
 }
 
+
+.content {
+	height:400px;
+	width:920px;
+}
+
 ul#tn {
 	margin-left:350px;
 	padding:0px;
