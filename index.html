@@ -19,12 +19,7 @@
 		        });
 			
 			$("span.home").styledButton({
-				'orientation' : 'left',
-				'action' : { 'on' :function () {
-                                    window.location.href = $("span.home a").attr('href');
-                                 },
-                                 },
-				'toggle' : true
+				'orientation' : 'left'
 			});
 			$("span.about").styledButton({
 				'action' : { 'on' :function () {
@@ -61,6 +56,8 @@
 			$("span.teller").styledButton({
 				'orientation' : 'right'
 			});
+                        $("span.home").styledButtonActivate();
+                        $("span.home a").css("color", "white");
 		} );
 	</script>
 

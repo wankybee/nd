@@ -41,27 +41,52 @@
         };
 
 	$(document).ready(function () {
-	$("div.heading span").css({
-	'padding' : '5px 20px',
-	'font-size' : '25px',
-	});
-	$("span.left").styledButton({
-	'orientation' : 'left',
-	'action' : { 'on' :function () {
-        window.location.href = $("span.left a").attr('href');
-        },
-        },
-	'toggle' : true
-	});
-	$("span.center").styledButton({
-	'orientation' : 'center'
-	});
-	$("span.teller").styledButton({
-	'orientation' : 'left'
-	});
-        $("span.center").styledButtonActivate();
-        $("span.center a").css("color", "white");
-	});
+   		        $("div.heading span").css({
+		        'padding' : '5px 20px',
+		        'font-size' : '25px',
+		        });
+			
+			$("span.home").styledButton({
+				'orientation' : 'left',
+				'action' : { 'on' :function () {
+                                    window.location.href = $("span.home a").attr('href');
+                                 },
+                                 },
+				'toggle' : true
+			});
+			$("span.about").styledButton({
+				'action' : { 'on' :function () {
+                                    window.location.href = $("span.about a").attr('href');
+                                 },
+                                 },
+				'toggle' : true,
+				'orientation' : 'center'
+			});
+			$("span.careers").styledButton({
+				'action' : { 'on' :function () {
+                                    window.location.href = $("span.careers a").attr('href');
+                                 },
+                                 },
+				'toggle' : true,
+				'orientation' : 'center'
+			});
+			$("span.products").styledButton({
+				'orientation' : 'center'
+			});
+			$("span.contact").styledButton({
+				'action' : { 'on' :function () {
+                                    window.location.href = $("span.contact a").attr('href');
+                                 },
+                                 },
+				'toggle' : true,
+				'orientation' : 'center'
+			});
+			$("span.teller").styledButton({
+				'orientation' : 'right'
+			});
+                        $("span.products").styledButtonActivate();
+                        $("span.products a").css("color", "white");
+        });
     </script>
     <script type="text/javascript" src="js/gallery.js"></script>
 </head>
@@ -71,7 +96,7 @@
       <h1> Autotech CNC </h1>
     </div>
     <div class="span-19 prepend-1 append-4 last heading">
-    <span class="left"><a href="">Left</a></span><span class="center"><a href="">Center</a></span><span class="teller"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+    <span class="home"><a href="">Home</a></span><span class="about"><a href="/nd/products.html">About</a></span><span class="careers"><a href="/nd/products.html">Careers</a></span><span class="products"><a href="">Products</a></span><span class="contact"><a href="/nd/products.html">Contact</a></span><span class="teller"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
     </div>
     <div class="span-19 prepend-1 append-4 last">
     <h1>Slider Gallery</h1>
