@@ -1,19 +1,10 @@
-body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
+div#main h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
 	/* Page reset */
 	margin:0px;
 	padding:0px;
 }
 
-body{
-	/* Setting default text color, background and a font stack */
-	color:#444444;
-	font-size:13px;
-	background: #f2f2f2;
-	font-family:Arial, Helvetica, sans-serif;
-}
-
 /* Gallery styles */
-
 #gallery{
 	/* CSS3 Box Shadow */
 	-moz-box-shadow:0 0 3px #AAAAAA;
@@ -58,12 +49,12 @@ body{
 	height:45px;
 }
 
-ul{
+ul#tn {
 	margin-left:350px;
 	padding:0px;
 }
 
-li{
+.menuItem{
 	/* Every thumbnail is a li element */
 	width:60px;
 	display:inline-block;
@@ -92,7 +83,7 @@ li.act a{
 	background:url(/nd/img/divider.png) no-repeat right;
 }
 
-li a{
+li.menuItem a{
 	display:block;
 	background:url(/nd/img/divider.png) no-repeat right;
 	height:35px;
@@ -100,7 +91,11 @@ li a{
 	width: 60px;
 }
 
-a img{
+li.menuItem a img{
+	border:none;
+}
+
+div.slide a img{
 	border:none;
 }
 
@@ -132,17 +127,8 @@ h2{
 	position:relative;
 }
 
-a, a:visited {
+div#gallery a, a:visited {
 	color:#0196e3;
 	text-decoration:none;
 	outline:none;
-}
-
-a:hover{
-	text-decoration:underline;
-}
-
-p{
-	padding:10px;
-	text-align:center;
 }

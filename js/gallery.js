@@ -18,11 +18,9 @@ $(document).ready(function(){
 			alert("Please, fill in width & height for all your images!");
 			return false;
 		}
-
 	});
 
 	$('#slides').width(totWidth);
-
 	/* Change the cotnainer div's width to the exact width of all the slides combined */
 
 	$('#menu ul li a').click(function(e){
