@@ -1,12 +1,14 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html>
-
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 	<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
 	<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
 	<!--[if lt IE 8]>
 	    <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
 	<![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/slider.css"/>
 	<script language="JavaScript" type="text/javascript" src="js/jquery-1.2.6.min.js" ></script>
 	<script language="JavaScript" type="text/javascript" src="js/jquery.styledButton.js" ></script>
 	<link rel="stylesheet" href="css/styledButton.css" type="text/css" />
@@ -15,7 +17,8 @@
 		$(document).ready(function () {
    		        $("div.heading span").css({
 		        'padding' : '5px 20px',
-		        'font-size' : '25px',
+		        'font-size' : '15px',
+		        'font-weight' : 'bold'
 		        });
 			
 			$("span.home").styledButton({
@@ -24,7 +27,7 @@
 			$("span.about").styledButton({
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.about a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true,
 				'orientation' : 'center'
@@ -32,7 +35,7 @@
 			$("span.careers").styledButton({
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.careers a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true,
 				'orientation' : 'center'
@@ -40,7 +43,7 @@
 			$("span.products").styledButton({
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.products a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true,
 				'orientation' : 'center'
@@ -48,7 +51,7 @@
 			$("span.contact").styledButton({
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.contact a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true,
 				'orientation' : 'center'
@@ -70,7 +73,7 @@
       <h1> Autotech CNC</h1>
     </div>
     <div class="span-19 prepend-1 append-4 last heading">
-      <span class="home"><a href="">Home</a></span><span class="about"><a href="/nd/about.html">About</a></span><span class="careers"><a href="/nd/careers.html">Careers</a></span><span class="products"><a href="/nd/products.html">Products</a></span><span class="contact"><a href="/nd/contact.html">Contact</a></span><span class="teller">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span class="home"><a href="">Home</a></span><span class="about"><a href="/nd/about.html">About</a></span><span class="careers"><a href="/nd/careers.html">Careers</a></span><span class="products"><a href="/nd/products.html">Products</a></span><span class="contact"><a href="/nd/contact.html">Contact</a></span><span class="teller">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
     </div>
     <div class="span-19 prepend-1 append-4 last">
       <!-- content here -->

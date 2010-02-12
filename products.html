@@ -5,8 +5,12 @@
     <!-- Framework CSS -->
     <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection"/>
     <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"/>
-    <!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/><![endif]-->
-
+        <!--[if lt IE 8]>
+            <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+        <![endif]-->
+	<!--[if lt IE 7.]>
+	    <script defer type="text/javascript" src="js/pngfix.js"></script>
+	<![endif]-->
     <link rel="stylesheet" type="text/css" href="css/slider.css"/>
     <script type="text/javascript" src="js/jquery-1.2.6.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.6.custom.min.js"></script>
@@ -42,21 +46,22 @@
 	$(document).ready(function () {
    		        $("div.heading span").css({
 		        'padding' : '5px 20px',
-		        'font-size' : '25px',
+		        'font-size' : '15px',
+		        'font-weight' : 'bold'
 		        });
 			
 			$("span.home").styledButton({
 				'orientation' : 'left',
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.home a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true
 			});
 			$("span.about").styledButton({
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.about a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true,
 				'orientation' : 'center'
@@ -64,7 +69,7 @@
 			$("span.careers").styledButton({
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.careers a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true,
 				'orientation' : 'center'
@@ -75,7 +80,7 @@
 			$("span.contact").styledButton({
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.contact a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true,
 				'orientation' : 'center'
@@ -88,7 +93,7 @@
         });
     </script>
     <script type="text/javascript" src="js/gallery.js"></script>
-    <title>Autotech CNC - about</title>
+    <title>Autotech CNC - Products</title>
 </head>
 <body>
   <div class="container">

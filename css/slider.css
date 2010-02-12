@@ -24,7 +24,7 @@ h1 {
     padding: 10px;
     height: 180px;
     width: 560px;
-    margin-left:80px;
+    /* margin-left:80px; */
 }
 
 .sliderGallery UL {
@@ -43,8 +43,8 @@ h1 {
 .slider {
     width: 542px;
     height: 17px;
-    margin-top: 170px;
-    margin-left: 5px;
+    /*margin-top: 170px;*/
+    /*margin-left: 5px;*/
     padding: 1px;
     position: relative;
     background: url(../images/productbrowser_scrollbar_20070622.png) no-repeat;

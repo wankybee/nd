@@ -1,5 +1,5 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html>
-
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
@@ -7,6 +7,7 @@
 	<!--[if lt IE 8]>
 	    <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
 	<![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/slider.css"/>
 	<script language="JavaScript" type="text/javascript" src="js/jquery-1.2.6.min.js" ></script>
 	<script language="JavaScript" type="text/javascript" src="js/jquery.styledButton.js" ></script>
 	<link rel="stylesheet" href="css/styledButton.css" type="text/css" />
@@ -15,13 +16,14 @@
 		$(document).ready(function () {
    		        $("div.heading span").css({
 		        'padding' : '5px 20px',
-		        'font-size' : '25px',
+		        'font-size' : '15px',
+                        'font-weight' : 'bold'
 		        });
 			
 			$("span.home").styledButton({
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.home a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true,
 				'orientation' : 'left'
@@ -29,7 +31,7 @@
 			$("span.about").styledButton({
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.about a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true,
 				'orientation' : 'center'
@@ -40,7 +42,7 @@
 			$("span.products").styledButton({
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.products a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true,
 				'orientation' : 'center'
@@ -48,7 +50,7 @@
 			$("span.contact").styledButton({
 				'action' : { 'on' :function () {
                                     window.location.href = $("span.contact a").attr('href');
-                                 },
+                                 }
                                  },
 				'toggle' : true,
 				'orientation' : 'center'

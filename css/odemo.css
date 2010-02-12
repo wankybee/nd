@@ -138,3 +138,10 @@ div#gallery a, a:visited {
 	text-decoration:none;
 	outline:none;
 }
+
+div.heading span  a {
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
