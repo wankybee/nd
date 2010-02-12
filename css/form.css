@@ -1,0 +1,98 @@
+#wrapper {
+margin:0 auto;
+text-align:left;
+background:#333; 
+border:2px solid #3E3E3E;
+line-height:20px;
+padding:20px;
+width:700px;
+}
+
+textarea {
+ height: 110px;
+}
+
+#contactform input{
+    font-size: 30px;
+}
+
+
+#contactform legend{
+    font-size: 30px;
+}
+
+div#contact { 
+position:fixed;
+top:200px;
+right:0; 
+ }
+.contimage{
+filter: alpha(opacity=80);-moz-opacity:.80;opacity:.80;
+width:25%;
+height:25%;
+}
+
+ /*  Contact Form Styling */
+ #contactform #error ul{
+ padding-left:0px;
+ line-height:20px;
+ list-style-type: none;
+ font-size: 20px;
+ }
+ #contactform #error span{
+ color:green;
+ padding:5px 0 5px 0;
+ position:absolute;
+ right:450px;
+ width:150px;
+ }
+ #contactform #error ul li{
+  color:#BF0B0B;
+  font-weight:normal;
+  }
+ h2#contact2{
+ font-size:30px;
+ color:#000;
+ margin:0 0 10px 0;
+ font-weight:normal;
+ padding-bottom:10px;
+ }
+ #contactform fieldset{
+ border:none;
+ margin:0em;
+ padding:0em;
+ }
+ #contactform #formleft{
+ float:left;
+ }
+ #contactform #error{
+ float:right;
+ }
+ #contactform .button{
+ background:#eded;
+ color:#666;
+ border:1px solid #ccc;
+ padding:5px 20px 5px 20px;
+ outline:none;
+ }
+ #contactform{
+ color:#666;
+ }
+
+ #contact_us {
+ outline:none;
+}
+
+.clear{clear:both;}
+.download{
+display:block;
+padding:20px 0 20px 0;
+background:#222;
+text-align:center;
+border:1px solid #000;
+color:#fd398f;
+font-size:18px;
+}
+.download:hover{
+background:#000;
+}
