@@ -26,7 +26,7 @@ div#main h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
 	background:url(/nd/img/panel.jpg) repeat-x bottom center #ffffff;
 	
 	/* The width of the gallery */
-	width:920px;
+	width:750px;
 	overflow:hidden;
 
 }
@@ -36,7 +36,7 @@ div#main h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
 	height:400px;
 	
 	/* jQuery changes the width later on to the sum of the widths of all the slides. */
-	width:920px;
+	width:750px;
 	overflow:hidden;
 }
 
@@ -52,17 +52,17 @@ div#main h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
 
 .content {
 	height:400px;
-	width:920px;
+	width:750px;
 }
 
 ul#tn {
-	margin-left:350px;
+	margin-left:180px;
 	padding:0px;
 }
 
 .menuItem{
 	/* Every thumbnail is a li element */
-	width:60px;
+	width:100px;
 	display:inline-block;
 	list-style:none;
 	height:45px;
@@ -90,11 +90,14 @@ li.act a{
 }
 
 li.menuItem a{
-	display:block;
 	background:url(/nd/img/divider.png) no-repeat right;
+}
+
+li.menuItem a{
+	display:block;
 	height:35px;
 	padding-top:10px;
-	width: 60px;
+	width: 100px;
 }
 
 li.menuItem a img{
@@ -127,10 +130,10 @@ h2{
 
 #main{
 	/* The main container */
-	margin:15px auto;
-	text-align:center;
-	width:920px;
-	position:relative;
+	/* margin:15px auto; */
+	/* text-align:center; */
+	width:750px;
+ 	/* position:relative; */
 }
 
 div#gallery a, a:visited {
